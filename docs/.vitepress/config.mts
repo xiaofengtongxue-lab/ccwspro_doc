@@ -4,6 +4,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'CCWSPro 文档',
   description: 'CCWSPro 使用、配置与部署说明',
+  base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
   lastUpdated: true,
   markdown: {
