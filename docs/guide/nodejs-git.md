@@ -1,6 +1,6 @@
 # Node.js 与 Git 环境
 
-如果用户需要在本地使用 Claude Code、Codex 或其他命令行工具，建议先准备 Node.js 和 Git。
+如果用户需要在本地使用 Codex 或其他命令行工具，建议先准备 Node.js 和 Git。
 
 ## Node.js
 

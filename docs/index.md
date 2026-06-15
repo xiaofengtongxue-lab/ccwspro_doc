@@ -20,8 +20,7 @@ features:
   - title: 账号与 Key
     details: 覆盖注册、接口地址、API Key 获取、充值和续费等核心流程。
   - title: 工具接入
-    details: 为 Claude Code、Codex、配置切换工具准备统一说明模板。
+    details: 为 Codex、配置切换工具和 OpenAI 兼容调用方式准备统一说明模板。
   - title: 可直接发布
     details: 内置 VitePress 配置、部署说明和自定义域名指引。
 ---
-

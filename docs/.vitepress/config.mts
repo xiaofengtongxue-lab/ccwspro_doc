@@ -39,7 +39,6 @@ export default defineConfig({
           items: [
             { text: 'Node.js 与 Git 环境', link: '/guide/nodejs-git' },
             { text: '配置切换工具', link: '/guide/config-switch' },
-            { text: 'Claude Code 配置', link: '/guide/claude-code' },
             { text: 'Codex 配置', link: '/guide/codex' }
           ]
         }
