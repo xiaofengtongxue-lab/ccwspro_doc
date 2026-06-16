@@ -5,7 +5,7 @@
 ## 环境变量方式
 
 ```bash
-export OPENAI_BASE_URL="https://api.example.com/v1"
+export OPENAI_BASE_URL="https://{控制台显示的接口域名}/v1"
 export OPENAI_API_KEY="你的 API Key"
 ```
 
@@ -17,7 +17,7 @@ export OPENAI_API_KEY="你的 API Key"
 model = "gpt-4.1"
 
 [providers.ccwspro]
-base_url = "https://api.example.com/v1"
+base_url = "https://{控制台显示的接口域名}/v1"
 api_key = "你的 API Key"
 ```
 
@@ -33,5 +33,5 @@ codex --version
 
 - Key 复制不完整。
 - Base URL 少了 `/v1` 或多了路径。
-- 模型名称不在站点支持列表中。
+- 模型名称不在 CCWSPro 支持列表中。
 - 当前网络无法连接接口域名。

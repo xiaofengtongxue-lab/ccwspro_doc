@@ -3,24 +3,24 @@ layout: home
 
 hero:
   name: CCWSPro
-  text: 使用说明文档
-  tagline: 按注册与充值、环境配置、疑难解答三条主线，快速完成账号开通、工具接入和问题排查。
+  text: 用户使用说明书
+  tagline: 从注册充值到环境配置，一站式配置教程
   image:
     src: /images/ccwspro-cover.svg
-    alt: CCWSPro 文档预览
+    alt: CCWSPro 使用说明书
   actions:
     - theme: brand
-      text: 注册与充值
+      text: 开始注册充值
       link: /guide/register
     - theme: alt
-      text: 环境配置
+      text: 配置使用环境
       link: /guide/nodejs-git
 
 features:
   - title: 注册与充值
-    details: 覆盖账号注册、充值续费、售后支持和商务合作等基础入口。
+    details: 完成账号注册、套餐充值和售后群加入，先把账号状态准备好。
   - title: 环境配置
-    details: 汇总 Node.js、Git、请求地址、API Key 和 Codex 配置流程。
+    details: 按步骤准备 Node.js、Git、请求地址、API Key 和 Codex 配置。
   - title: 疑难解答
-    details: 按安装、认证、网络、请求错误、权限和计费等场景排查问题。
+    details: 遇到安装、认证、网络、权限、计费问题时，按现象快速排查。
 ---

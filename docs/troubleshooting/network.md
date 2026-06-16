@@ -2,16 +2,16 @@
 
 ## 连接超时
 
-先检查本地网络：
+先把命令中的域名换成控制台显示的接口域名，再检查本地网络：
 
 ```bash
-ping api.example.com
+ping {控制台显示的接口域名}
 ```
 
 再检查接口是否可访问：
 
 ```bash
-curl -I https://api.example.com/v1
+curl -I https://{控制台显示的接口域名}/v1
 ```
 
 ## DNS 问题

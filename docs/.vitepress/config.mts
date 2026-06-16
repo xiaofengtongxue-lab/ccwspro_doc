@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'CCWSPro 文档',
-  description: 'CCWSPro 注册、充值、环境配置与疑难解答',
+  description: 'CCWSPro 用户使用说明书：注册充值、环境配置与常见问题',
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
   srcExclude: ['publish/**/*.md'],
@@ -71,7 +71,7 @@ export default defineConfig({
       text: '最后更新'
     },
     footer: {
-      message: 'CCWSPro 文档仅作为自有站点说明模板，请按实际产品信息替换内容。',
+      message: 'CCWSPro 用户使用说明书，帮助你完成注册充值、环境配置和常见问题排查。',
       copyright: 'Copyright © 2026 CCWSPro'
     }
   }
