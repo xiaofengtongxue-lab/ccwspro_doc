@@ -19,11 +19,7 @@ brew tap farion1231/ccswitch
 brew install --cask cc-switch
 ```
 
-也可以从 CC Switch 的 Releases 页面下载安装包：
-
-```text
-https://github.com/farion1231/cc-switch/releases
-```
+也可以从 [CC Switch Releases](https://github.com/farion1231/cc-switch/releases) 页面下载最新安装包。
 
 安装完成后打开 CC Switch。首次启动时，如果它提示导入已有配置，可以按页面提示导入；如果你是第一次配置 Codex，也可以直接新建配置。
 

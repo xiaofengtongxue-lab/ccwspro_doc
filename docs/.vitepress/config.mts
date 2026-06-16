@@ -28,7 +28,7 @@ export default defineConfig({
       {
         text: '注册与充值',
         items: [
-          { text: '注册账号', link: '/guide/register' },
+          { text: '注册 / 登录', link: '/guide/register' },
           { text: '充值 / 续费', link: '/guide/recharge' },
           { text: '售后与支持', link: '/guide/support' },
           { text: '商务合作', link: '/guide/business' }
