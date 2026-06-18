@@ -1,6 +1,6 @@
 # CCWSPro 文档站
 
-这是一个基于 VitePress 的 CCWSPro 用户使用说明书，信息架构参考了 CCTQ-Doc，重点覆盖注册充值、环境配置和疑难解答。
+这是一个基于 VitePress 的 CCWSPro 用户使用说明书，重点覆盖注册充值、环境配置和疑难解答。
 
 ## 本地启动
 
@@ -23,7 +23,7 @@ docs/.vitepress/dist
 
 ## 主要目录
 
-- `docs/guide/`：账号、Key、充值、工具配置说明
+- `docs/guide/`：账号、API Key、充值、工具配置说明
 - `docs/troubleshooting/`：常见问题
 - `docs/publish/`：维护者使用的部署、自定义域名和图片管理说明
 - `docs/public/images/`：公开文档使用的图片与截图资源
