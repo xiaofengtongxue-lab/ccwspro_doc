@@ -5,13 +5,13 @@
 先检查基础请求地址是否能解析：
 
 ```bash
-ping docs.ccws.pro
+ping www.ccws.pro
 ```
 
 再检查 Codex 使用的 `/v1` 接口是否可访问：
 
 ```bash
-curl -I https://docs.ccws.pro/v1
+curl -I https://www.ccws.pro/v1
 ```
 
 ## DNS 问题
@@ -23,7 +23,7 @@ curl -I https://docs.ccws.pro/v1
 - 切换网络环境。
 - 关闭或调整代理。
 - 检查系统 DNS。
-- 在终端里单独验证 `docs.ccws.pro`。
+- 在终端里单独验证 `www.ccws.pro`。
 
 ## 代理冲突
 
