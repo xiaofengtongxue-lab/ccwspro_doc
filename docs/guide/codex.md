@@ -167,34 +167,21 @@ codex
 
 ```toml
 model_provider = "ccwspro"
-model = "以控制台支持的模型名称为准"
+model = "gpt-5.5"
+model_reasoning_effort = "xhigh"
 
 [model_providers.ccwspro]
 name = "CCWSPro"
-base_url = "https://www.ccws.pro/v1"
 wire_api = "responses"
-env_key = "OPENAI_API_KEY"
+requires_openai_auth = true
+base_url = "https://www.ccws.pro/v1"
 ```
 
 ::: warning 注意
 Codex 的 `base_url` 需要带 `/v1`，请填写 `https://www.ccws.pro/v1`。
 :::
 
-然后设置环境变量：
-
-::: code-group
-
-```bash [macOS / Linux]
-export OPENAI_API_KEY="你的 API Key"
-```
-
-```powershell [Windows]
-setx OPENAI_API_KEY "你的 API Key"
-```
-
-:::
-
-设置后重新打开终端，再进入项目目录运行：
+保存配置后，重新打开终端，再进入项目目录运行：
 
 ```bash
 cd 你的项目目录
