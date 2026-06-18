@@ -2,7 +2,7 @@
 
 CC Switch 是一个本机桌面配置管理工具。你可以用它保存 CCWSPro 的请求地址和 API Key，并在 Codex 等命令行工具之间切换配置。
 
-![配置编辑器](/images/screenshots/config-editor.svg)
+![CC Switch 配置界面](/images/screenshots/cc-switch-codex-add-entry.png)
 
 ## 适合什么时候用
 
@@ -23,41 +23,53 @@ brew install --cask cc-switch
 
 安装完成后打开 CC Switch。首次启动时，如果它提示导入已有配置，可以按页面提示导入；如果你是第一次配置 Codex，也可以直接新建配置。
 
-## 添加 CCWSPro 配置
+## 安装完成后配置 CCWSPro
+
+### 1. 进入 Codex 配置
 
 1. 打开 CC Switch。
-2. 进入 Codex 对应的配置区域。
-3. 点击「添加供应商」或右上角的「+」按钮。
-4. 选择自定义配置或 OpenAI 兼容配置。
-5. 填入 CCWSPro 的请求地址、API Key 和模型名称。
-6. 保存配置。
+2. 点击顶部的 Codex 图标。
+3. 点击右上角的「+」按钮。
 
-推荐填写：
+![进入 Codex 配置并添加供应商](/images/screenshots/cc-switch-codex-add-entry.png)
+
+### 2. 选择自定义配置
+
+1. 在「添加新供应商」页面，确认当前选择的是「Codex 供应商」。
+2. 在预设供应商中点击「自定义配置」。
+3. 如果页面内容较多，可以向下滚动继续填写。
+
+![选择 Codex 自定义配置](/images/screenshots/cc-switch-custom-provider.png)
+
+### 3. 填写 CCWSPro 信息
+
+按下面内容填写：
 
 | 字段 | 说明 |
 | --- | --- |
-| 名称 | 建议填写 `CCWSPro`，方便后续识别 |
-| 请求地址 | 以控制台显示为准，Codex 通常需要带 `/v1` |
+| 供应商名称 | 建议填写 `CCWS-PRO`，方便后续识别 |
+| 官网链接 | 填写 `https://www.ccws.pro` |
 | API Key | 粘贴当前账号生成的有效 Key |
-| 模型名称 | 填写 CCWSPro 当前支持的模型名称 |
+| API 请求地址 | 以控制台显示为准，Codex 通常需要带 `/v1`，例如 `https://www.ccws.pro/v1` |
 
-配置示例：
+填写完成后，点击右下角「添加」。
 
-```json
-{
-  "name": "CCWSPro",
-  "baseUrl": "https://{控制台显示的接口域名}/v1",
-  "apiKey": "粘贴你的 API Key",
-  "model": "gpt-4.1"
-}
-```
+![填写 CCWSPro 供应商信息](/images/screenshots/cc-switch-provider-form.png)
 
-## 启用并验证
+::: tip 提示
+「完整 URL」开关保持默认关闭即可。除非工作人员特别说明，否则只需要填写兼容 OpenAI Response 格式的服务端点地址。
+:::
 
-1. 在 CC Switch 中选择刚添加的 `CCWSPro` 配置。
+### 4. 启用配置并重启 Codex
+
+1. 回到 CC Switch 列表，找到刚添加的 `CCWS-PRO`。
 2. 点击「启用」。
 3. 关闭当前终端窗口，并重新打开终端。
-4. 运行一次 Codex 测试任务，确认请求能正常发出。
+4. 重新启动 Codex 后，发起一次简单测试，确认请求能正常发出。
+
+![启用 CCWSPro 配置](/images/screenshots/cc-switch-enable-provider.png)
+
+## 验证与排查
 
 如果仍然请求失败，优先检查：
 
