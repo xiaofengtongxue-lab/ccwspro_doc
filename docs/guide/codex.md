@@ -181,7 +181,26 @@ base_url = "https://www.ccws.pro/v1"
 Codex 的 `base_url` 需要带 `/v1`，请填写 `https://www.ccws.pro/v1`。
 :::
 
-保存配置后，重新打开终端，再进入项目目录运行：
+然后在同一个 `.codex` 目录中创建或修改 `auth.json`：
+
+| 系统 | API Key 文件 |
+| --- | --- |
+| macOS / Linux | `~/.codex/auth.json` |
+| Windows | `C:\Users\你的用户名\.codex\auth.json` |
+
+参考配置如下：
+
+```json
+{
+  "OPENAI_API_KEY": "你在CCWSPro申请的API key"
+}
+```
+
+::: warning 安全提醒
+`auth.json` 里保存的是你的 API Key，不要把它放进项目目录，也不要提交到 Git 仓库。
+:::
+
+保存 `config.toml` 和 `auth.json` 后，重新打开终端，再进入项目目录运行：
 
 ```bash
 cd 你的项目目录
@@ -194,6 +213,7 @@ codex
 
 - CC Switch 当前启用的 Provider 是否为 `CCWS-PRO`。
 - Codex 请求地址是否为 `https://www.ccws.pro/v1`。
+- 手动配置时，`auth.json` 是否放在正确的 `.codex` 目录中。
 - API Key 是否复制完整、是否仍然有效。
 - 模型名称是否在 CCWSPro 当前支持范围内。
 - 修改配置后是否重新打开终端或重启客户端。
