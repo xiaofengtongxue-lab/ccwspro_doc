@@ -1,35 +1,34 @@
-# CCWSPro 文档站
+# CCWSPro 用户使用说明书
 
-这是一个基于 VitePress 的 CCWSPro 用户使用说明书，重点覆盖注册充值、环境配置和疑难解答。
+这是 CCWSPro 面向用户的使用说明书。
 
-## 本地启动
+线上地址：[https://docs.ccws.pro](https://docs.ccws.pro)
 
-```bash
-npm install
-npm run docs:dev
-```
+## 内容定位
 
-## 构建
+这份文档只解决用户使用过程中的实际问题，不做产品官网介绍，也不写内部实现细节。
 
-```bash
-npm run docs:build
-```
+重点覆盖三条主线：
 
-构建产物在：
+- 注册与充值
+- 环境配置
+- 疑难解答
 
-```text
-docs/.vitepress/dist
-```
+## 写作口径
 
-## 主要目录
+- 面向普通用户，步骤要直接、清楚、可照着操作。
+- 能给固定地址的地方直接写固定地址，不让用户自己猜。
+- 截图优先使用 CCWSPro 真实页面或真实工具界面。
+- 不把说明书写成营销页，也不把 README 写成工程说明。
+- 不出现与 CCWSPro 无关的参考站点名称。
 
-- `docs/guide/`：账号、API Key、充值、工具配置说明
-- `docs/troubleshooting/`：常见问题
-- `docs/publish/`：维护者使用的部署、自定义域名和图片管理说明
-- `docs/public/images/`：公开文档使用的图片与截图资源
+## 内容维护
 
-## 图片维护
+常见内容位置：
 
-把产品截图放到 `docs/public/images/screenshots/`，然后按需修改 Markdown 中的图片路径。维护说明见：
+- 使用教程：`docs/guide/`
+- 疑难解答：`docs/troubleshooting/`
+- 图片与截图：`docs/public/images/`
+- 发布、域名和图片替换说明：`docs/publish/`
 
-[图片维护说明](docs/publish/image-replacement.md)
+维护图片时，优先参考：[图片维护说明](docs/publish/image-replacement.md)
