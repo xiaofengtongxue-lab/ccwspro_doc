@@ -19,7 +19,22 @@ brew tap farion1231/ccswitch
 brew install --cask cc-switch
 ```
 
-也可以从 [CC Switch Releases](https://github.com/farion1231/cc-switch/releases) 页面下载最新安装包。
+也可以从 [CC Switch Releases](https://github.com/farion1231/cc-switch/releases) 页面下载最新安装包。打开页面后，先往下滑到 `Assets` 区域；如果只看到部分文件，点击「Show all ... assets」展开完整下载列表。
+
+![展开 GitHub Releases 资源列表](/images/screenshots/cc-switch-github-assets-more.png)
+
+展开后按自己的系统选择安装包：
+
+| 系统 | 推荐下载 |
+| --- | --- |
+| macOS | 下载文件名以 `macOS.dmg` 结尾的安装包 |
+| Windows | 下载文件名以 `Windows.msi` 结尾的安装包 |
+
+![选择 CC Switch 安装包](/images/screenshots/cc-switch-github-assets-installers.png)
+
+::: tip 提示
+截图中的版本号只是示例。CC Switch 会持续更新，下载时以 Releases 页面实际显示的最新版本为准，不需要指定某一个固定版本。
+:::
 
 安装完成后打开 CC Switch。首次启动时，如果它提示导入已有配置，可以按页面提示导入；如果你是第一次配置 Codex，也可以直接新建配置。
 
