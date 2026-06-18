@@ -84,6 +84,32 @@ brew install --cask cc-switch
 
 ![启用 CCWSPro 配置](/images/screenshots/cc-switch-enable-provider.png)
 
+## 切换 Provider 后显示 Codex 会话历史
+
+如果你在 CCWSPro、官方 OpenAI 或其他 Provider 之间切换后，发现 Codex 原来的聊天记录没有出现在历史列表里，可以开启 CC Switch 的统一会话历史设置。
+
+### 1. 进入设置
+
+在 CC Switch 主界面点击左上方的齿轮按钮，进入设置页面。
+
+![进入 CC Switch 设置](/images/screenshots/cc-switch-codex-history-settings-entry.png)
+
+### 2. 找到 Codex 应用增强
+
+在「通用」页面向下滑动，找到「Codex 应用增强」区域。
+
+![在通用设置中向下滑动](/images/screenshots/cc-switch-codex-history-general-scroll.png)
+
+### 3. 打开统一 Codex 会话历史
+
+开启「统一 Codex 会话历史」。开启后，官方与第三方 Provider 的会话会出现在同一个历史列表里，切换配置后更容易找回之前的聊天记录。
+
+![开启统一 Codex 会话历史](/images/screenshots/cc-switch-codex-history-toggle.png)
+
+::: tip 提示
+如果页面提示迁移现有官方会话，可以按提示确认，迁移前会自动备份。跨 Provider 继续旧会话时，对方服务可能无法识别旧会话中的部分加密内容；重要任务建议在当前 Provider 下新开会话。
+:::
+
 ## 验证与排查
 
 如果仍然请求失败，优先检查：
