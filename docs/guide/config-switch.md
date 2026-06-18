@@ -65,7 +65,7 @@ brew install --cask cc-switch
 | 供应商名称 | 建议填写 `CCWS-PRO`，方便后续识别 |
 | 官网链接 | 填写 `https://www.ccws.pro` |
 | API Key | 粘贴当前账号生成的有效 Key |
-| API 请求地址 | 以控制台显示为准，Codex 通常需要带 `/v1`，例如 `https://www.ccws.pro/v1` |
+| API 请求地址 | Codex 配置填写 `https://docs.ccws.pro/v1` |
 
 填写完成后，点击右下角「添加」。
 
@@ -114,8 +114,7 @@ brew install --cask cc-switch
 
 如果仍然请求失败，优先检查：
 
-- 请求地址是否以控制台显示为准。
-- Codex 使用的请求地址是否带 `/v1`。
+- Codex 使用的请求地址是否为 `https://docs.ccws.pro/v1`。
 - API Key 是否复制完整。
 - 模型名称是否在 CCWSPro 当前支持范围内。
 
