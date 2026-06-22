@@ -20,7 +20,7 @@ features:
   - title: 注册与充值
     details: 完成账号注册、套餐充值和售后群加入，先把账号状态准备好。
   - title: 环境配置
-    details: 按步骤准备 Node.js、Git、请求地址、API Key 和 Codex 配置。
+    details: 按步骤准备 Node.js、Git、请求地址、API Key、Codex 配置和生图能力。
   - title: 疑难解答
     details: 遇到安装、认证、网络、权限、计费问题时，按现象快速排查。
 ---

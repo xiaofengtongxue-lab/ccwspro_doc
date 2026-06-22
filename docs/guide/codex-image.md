@@ -1,0 +1,148 @@
+# Codex 生图教程
+
+CCWS Codex Image Skill 可以让 Codex 在生图、图片编辑、图生图、局部修改和背景替换等任务中调用 CCWSPro 的生图模型。
+
+开始前请先准备好：
+
+- 已完成 [Codex 配置](/guide/codex)，并确认 Codex 可以正常对话。
+- 已在 CCWSPro 控制台创建可用于生图的 API Key。
+- 本机已安装 Python。macOS / Linux 通常使用 `python3`，Windows 通常使用 `py -3`。
+
+::: tip 适用场景
+如果你希望在 Codex 里直接说“帮我生成一张图”“把这张图改成某种风格”“替换图片背景”，就可以安装这个生图技能。
+:::
+
+## 1. 获取生图 API Key
+
+进入 CCWSPro 控制台，创建生图分组 API Key，并确认这个 Key 支持：
+
+```text
+model: gpt-image-2
+```
+
+创建后复制 API Key，并保存到本地安全位置。不要把 API Key 发到聊天窗口、截图、群聊或公开仓库中。
+
+## 2. 下载安装包
+
+打开 [CCWS Codex Image Skill Releases](https://github.com/xiaofengtongxue-lab/ccws-codex-image-skill/releases)，下载最新版本的安装包。
+
+安装包文件名通常类似：
+
+```text
+ccws-image-generation-installer-v版本号.zip
+```
+
+下载后解压到一个你能找到的位置，例如桌面或下载目录。
+
+## 3. 配置环境变量
+
+安装前需要先配置 `CCWS_IMAGE_API_KEY`。建议配置为长期环境变量，否则重启终端或 Codex 后可能需要重新设置。
+
+::: code-group
+
+```bash [macOS / Linux 临时生效]
+export CCWS_IMAGE_API_KEY="你的 CCWSPro 生图 API Key"
+```
+
+```powershell [Windows PowerShell 临时生效]
+$env:CCWS_IMAGE_API_KEY="你的 CCWSPro 生图 API Key"
+```
+
+:::
+
+长期配置可以这样设置：
+
+::: code-group
+
+```bash [macOS / Linux zsh]
+echo 'export CCWS_IMAGE_API_KEY="你的 CCWSPro 生图 API Key"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+```bash [macOS / Linux bash]
+echo 'export CCWS_IMAGE_API_KEY="你的 CCWSPro 生图 API Key"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+```powershell [Windows PowerShell]
+[Environment]::SetEnvironmentVariable("CCWS_IMAGE_API_KEY", "你的 CCWSPro 生图 API Key", "User")
+```
+
+:::
+
+Windows 长期配置后，需要重新打开 PowerShell 或重启 Codex，让新环境变量生效。
+
+::: warning 注意
+这个 Key 是生图技能使用的 Key，不要和普通聊天配置里的 `auth.json` 混在一起。安装器和生图技能都会读取 `CCWS_IMAGE_API_KEY`，如果没有配置，会停止安装或无法生图。
+:::
+
+## 4. 运行安装器
+
+进入解压后的安装包目录，再运行安装命令。
+
+::: code-group
+
+```bash [macOS / Linux]
+cd 解压后的安装包目录
+python3 install.py --yes
+```
+
+```powershell [Windows PowerShell]
+cd 解压后的安装包目录
+py -3 .\install.py --yes
+```
+
+:::
+
+安装器会执行这些操作：
+
+1. 检查本机已有的生图技能。
+2. 检查 `CCWS_IMAGE_API_KEY` 是否已配置。
+3. 安装 `ccws-image-generation` 技能。
+4. 提示你新开 Codex 会话或重启 Codex。
+
+如果安装器提示本机已经有其他生图技能，建议先按提示处理，避免多个生图技能同时响应同一个任务。
+
+## 5. 重启 Codex
+
+安装完成后，新开一个 Codex 会话，或重启 Codex 客户端 / Codex CLI。
+
+重启后再测试生图任务，不要在旧会话里直接测试。
+
+## 6. 测试生图
+
+可以先用一个简单任务确认是否生效：
+
+```text
+帮我生成一张 16:9 的产品宣传图，主题是 AI 编程工具，画面要简洁、明亮、适合放在文档首页。
+```
+
+如果需要图片编辑，可以把图片发给 Codex 后再描述修改要求：
+
+```text
+把这张图的背景替换成浅色办公桌面风格，主体保持不变。
+```
+
+## 常见问题
+
+### 提示没有配置 CCWS_IMAGE_API_KEY
+
+说明当前终端没有读取到生图 API Key。重新执行环境变量配置命令后，再运行安装器。长期配置后，需要重新打开终端或重启 Codex。
+
+### 安装后 Codex 仍然没有生图
+
+按顺序检查：
+
+1. 是否已经新开 Codex 会话或重启 Codex。
+2. 安装器是否提示 `ccws-image-generation` 安装成功。
+3. `CCWS_IMAGE_API_KEY` 对应的 Key 是否支持 `gpt-image-2`。
+4. 本机是否存在其他生图技能导致冲突。
+
+### Windows 提示找不到 py
+
+说明 Windows 当前没有可用的 Python 启动器。请先安装 Python，再重新打开 PowerShell 执行安装命令。
+
+## 相关链接
+
+- [CCWS Codex Image Skill 仓库](https://github.com/xiaofengtongxue-lab/ccws-codex-image-skill)
+- [下载安装包](https://github.com/xiaofengtongxue-lab/ccws-codex-image-skill/releases)

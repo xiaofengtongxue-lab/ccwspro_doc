@@ -40,7 +40,8 @@ export default defineConfig({
           { text: 'Node.js 与 Git 环境', link: '/guide/nodejs-git' },
           { text: '请求地址 / API Key', link: '/guide/api-key' },
           { text: 'CC Switch 使用教程', link: '/guide/config-switch' },
-          { text: 'Codex 配置', link: '/guide/codex' }
+          { text: 'Codex 配置', link: '/guide/codex' },
+          { text: 'Codex 生图教程', link: '/guide/codex-image' }
         ]
       },
       {

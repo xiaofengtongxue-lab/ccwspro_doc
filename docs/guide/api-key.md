@@ -40,10 +40,33 @@ export OPENAI_BASE_URL="https://www.ccws.pro/v1"
 export OPENAI_API_KEY="你的 API Key"
 ```
 
+Codex 生图技能需要单独配置生图 API Key：
+
+::: code-group
+
+```bash [macOS / Linux]
+export CCWS_IMAGE_API_KEY="你的 CCWSPro 生图 API Key"
+```
+
+```powershell [Windows PowerShell]
+$env:CCWS_IMAGE_API_KEY="你的 CCWSPro 生图 API Key"
+```
+
+:::
+
+生图 API Key 需要确认支持：
+
+```text
+model: gpt-image-2
+```
+
+具体安装步骤见 [Codex 生图教程](/guide/codex-image)。
+
 ## 检查清单
 
 - Base URL 没有多余空格。
 - Codex 配置使用 `https://www.ccws.pro/v1`。
 - Key 使用的是当前账号下最新有效的 Key。
+- 如果用于 Codex 生图技能，确认 Key 支持 `gpt-image-2`。
 - 工具配置中的模型名称和 CCWSPro 支持的模型一致。
 - 如果使用团队账号，确认当前 Key 有调用权限。
