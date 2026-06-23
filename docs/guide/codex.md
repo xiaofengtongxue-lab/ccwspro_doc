@@ -7,8 +7,9 @@
 - 已完成 [Codex 下载安装](/guide/codex-install)。
 - 已完成 [注册 / 登录](/guide/register) 和 [充值 / 续费](/guide/recharge)。
 - 已获取 CCWSPro 的 [请求地址 / API Key](/guide/api-key)。
-- 命令行方式用户已完成 [Node.js 与 Git 环境](/guide/nodejs-git)。
 - 已安装并配置 [CC Switch 使用教程](/guide/config-switch)。
+
+如果你使用 `npm` 方式安装或更新 Codex CLI，再先确认 [Node.js 环境（CLI 可选）](/guide/nodejs-git) 已经可用；使用 Codex App 或官方脚本安装 CLI 可以跳过这一步。
 
 ::: tip 推荐
 普通用户推荐使用 `Codex 客户端` + `CC Switch`。这样不需要手动编辑配置文件，也更容易在不同 Provider 之间切换。
@@ -16,7 +17,7 @@
 
 ## 客户端配置（推荐）
 
-### 1. 通过 CC Switch 启用 CCWSPro
+### 通过 CC Switch 启用 CCWSPro
 
 打开 CC Switch，确认当前启用的是 `CCWS-PRO` Provider。如果你还没有添加 Provider，先按 [CC Switch 使用教程](/guide/config-switch) 完成配置。
 
@@ -27,13 +28,13 @@
 - API Key 已复制完整。
 - 启用 Provider 后，重新启动 Codex 客户端。
 
-### 2. 打开项目文件夹
+### 打开项目文件夹
 
 在 Codex 客户端中打开你要处理的项目文件夹。如果页面提供运行位置选择，优先选择 `Local`，让 Codex 在你的电脑本地项目中工作。
 
 ![Codex 客户端选择项目文件夹](/images/screenshots/codex-client-open-project.png)
 
-### 3. 发起第一次测试
+### 发起第一次测试
 
 打开项目后，先发送一个简单任务确认配置是否生效：
 

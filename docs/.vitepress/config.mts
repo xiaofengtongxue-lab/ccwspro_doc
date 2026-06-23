@@ -29,41 +29,41 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '1. 下载安装 Codex',
+        text: '下载安装 Codex',
         items: [
           { text: 'Codex 下载安装', link: '/guide/codex-install' }
         ]
       },
       {
-        text: '2. 注册账号',
+        text: '注册账号',
         items: [
           { text: '注册 / 登录', link: '/guide/register' }
         ]
       },
       {
-        text: '3. 充值账户',
+        text: '充值账户',
         items: [
           { text: '充值 / 续费', link: '/guide/recharge' },
           { text: '兑换码兑换', link: '/guide/recharge#兑换码兑换' }
         ]
       },
       {
-        text: '4. 生成 API Key',
+        text: '生成 API Key',
         items: [
           { text: '请求地址 / API Key', link: '/guide/api-key' }
         ]
       },
       {
-        text: '5. 配置使用环境',
+        text: '配置使用环境',
         items: [
-          { text: 'Node.js 与 Git 环境', link: '/guide/nodejs-git' },
+          { text: 'Node.js 环境（CLI 可选）', link: '/guide/nodejs-git' },
           { text: 'CC Switch 使用教程', link: '/guide/config-switch' },
           { text: 'Codex 配置', link: '/guide/codex' },
           { text: 'Codex 生图教程', link: '/guide/codex-image' }
         ]
       },
       {
-        text: '6. 疑难解答',
+        text: '疑难解答',
         items: [
           { text: '总览', link: '/troubleshooting/' },
           { text: '安装与启动', link: '/troubleshooting/install' },

@@ -1,46 +1,65 @@
-# Node.js 与 Git 环境
+# Node.js 环境（CLI 可选）
 
-如果你已经安装好 Codex，下一步需要准备 Node.js 和 Git。Node.js 用来运行 npm 生态里的命令行工具，Git 用来下载项目、管理代码和配合后续部署。
+本页只给使用 Codex CLI 的用户作为补充说明。如果你安装的是 Codex App，通常不需要先安装 Node.js，可以直接继续配置 [CC Switch 使用教程](/guide/config-switch) 和 [Codex 配置](/guide/codex)。
+
+Codex CLI 本身可以通过官方脚本安装，不一定需要你提前准备 Node.js。只有在下面这些情况里，才建议看本页：
+
+| 场景 | 是否需要 Node.js |
+| --- | --- |
+| 使用 Codex App | 不需要 |
+| 使用官方脚本安装 Codex CLI | 通常不需要提前安装 |
+| 使用 `npm install -g @openai/codex` 安装 Codex CLI | 需要 |
+| 使用 `npm install -g @openai/codex@latest` 更新 Codex CLI | 需要 |
+| 后续需要在项目里运行 npm、pnpm、yarn 等前端命令 | 需要 |
+
+::: tip 关于 Git
+Git 不是 Codex CLI 的必装前置。Codex CLI 可以在普通文件夹里启动。只有当你要处理 Git 仓库、查看提交历史、创建提交或推送代码时，再按需安装 Git 即可。
+:::
 
 ## 安装前先确认
 
-建议安装：
+先打开终端执行：
 
-- Node.js：选择 LTS 版本。
-- npm：安装 Node.js 时会自动附带。
-- Git：选择当前系统对应的稳定版本。
+```bash
+node -v
+npm -v
+```
+
+如果两条命令都能看到版本号，说明 Node.js 和 npm 已经可用，可以跳过安装步骤。
+
+如果提示 `command not found`、`不是内部或外部命令`，或者完全没有版本号，再按下面步骤安装。
+
+## macOS 安装
+
+### 方式一：使用官方安装包
+
+普通用户推荐使用官方安装包：
+
+1. 打开 [nodejs.org](https://nodejs.org/)。
+2. 下载 LTS 版本安装包。
+3. 双击安装包，按提示完成安装。
+4. 安装完成后，关闭当前终端窗口，再重新打开一个终端。
 
 ::: tip 提示
 LTS 是长期维护版本，更适合日常使用。不要为了追新安装实验版本，除非你明确知道自己需要它。
 :::
 
-## macOS 安装
+### 方式二：使用 Homebrew
 
-### 方式一：使用 Homebrew
-
-如果你的电脑已经安装 Homebrew，可以直接在终端执行：
+如果你的电脑已经安装 Homebrew，也可以在终端执行：
 
 ```bash
-brew install node git
+brew install node
 ```
 
 安装完成后，关闭当前终端窗口，再重新打开一个终端。
-
-### 方式二：使用官方安装包
-
-如果你不熟悉命令行，可以使用官方安装包：
-
-- Node.js：[nodejs.org](https://nodejs.org/)
-- Git：[git-scm.com/downloads](https://git-scm.com/downloads)
-
-下载后按安装器提示一路安装即可。安装完成后，同样需要重新打开终端。
 
 ## Windows 安装
 
 ### 方式一：使用官方安装包
 
-1. 打开 [nodejs.org](https://nodejs.org/)，下载 LTS 版本安装包。
-2. 打开 [git-scm.com/downloads](https://git-scm.com/downloads)，下载 Windows 版本安装包。
+1. 打开 [nodejs.org](https://nodejs.org/)。
+2. 下载 LTS 版本安装包。
 3. 双击安装包，按默认选项安装。
 4. 安装完成后，重新打开 PowerShell、命令提示符或 Windows Terminal。
 
@@ -50,22 +69,20 @@ brew install node git
 
 ```powershell
 winget install --id OpenJS.NodeJS.LTS -e
-winget install --id Git.Git -e
 ```
 
 安装完成后，关闭当前终端窗口，再重新打开一个终端。
 
 ## 验证安装结果
 
-重新打开终端后，依次执行：
+重新打开终端后，执行：
 
 ```bash
 node -v
 npm -v
-git --version
 ```
 
-如果三条命令都能看到版本号，说明 Node.js、npm 和 Git 已经安装成功。
+如果能看到版本号，说明 Node.js 和 npm 已经安装成功。
 
 还可以检查命令路径：
 
@@ -74,47 +91,61 @@ git --version
 ```bash [macOS]
 which node
 which npm
-which git
 ```
 
 ```powershell [Windows]
 where node
 where npm
-where git
 ```
 
 :::
 
 这些命令会显示工具安装在电脑上的具体位置。只要能显示路径，通常就说明系统已经能找到它们。
 
-## 配置 Git 用户信息
+## 用 npm 安装或更新 Codex CLI
 
-第一次使用 Git 时，建议先设置提交时显示的姓名和邮箱：
-
-```bash
-git config --global user.name "你的名字"
-git config --global user.email "你的邮箱"
-```
-
-设置后可以用下面命令确认：
+如果你选择 npm 方式安装 Codex CLI，可以执行：
 
 ```bash
-git config --global --list
+npm install -g @openai/codex
 ```
 
-如果能看到 `user.name` 和 `user.email`，说明 Git 基础配置已经完成。
+如果你已经用 npm 安装过 Codex CLI，可以执行：
+
+```bash
+npm install -g @openai/codex@latest
+```
+
+安装或更新完成后，重新打开终端，执行：
+
+```bash
+codex --version
+```
+
+如果能看到版本号，说明 Codex CLI 已经可以使用。
 
 ## 常见问题
 
-### node、npm 或 git 命令找不到
+### node 或 npm 命令找不到
 
 通常是安装后终端没有重新加载环境变量。先关闭所有终端窗口，再重新打开终端执行验证命令。
 
 如果还是找不到：
 
 - 确认安装包已经完整安装成功。
-- Windows 用户确认安装 Git 时没有取消添加 PATH 的选项。
+- Windows 用户重新打开 PowerShell、命令提示符或 Windows Terminal。
 - macOS 用户如果使用 Homebrew，确认 `brew doctor` 没有明显错误提示。
+
+### npm 安装 Codex CLI 失败
+
+先确认：
+
+```bash
+node -v
+npm -v
+```
+
+如果 Node.js 和 npm 都正常，但 npm 安装仍然失败，可以先改用 [Codex 下载安装](/guide/codex-install) 里的官方脚本方式安装 Codex CLI。
 
 ### npm 下载速度慢
 
@@ -130,11 +161,9 @@ git config --global --list
 
 ## 下一步
 
-完成 Node.js 和 Git 环境后，可以继续配置：
+完成 Node.js 环境后，可以继续：
 
 - [CC Switch 使用教程](/guide/config-switch)
 - [Codex 配置](/guide/codex)
 
-::: tip 提示
-后续如果运行命令行工具失败，先回到本页重新执行验证命令，确认 Node.js、npm 和 Git 都能正常使用。
-:::
+如果你使用的是 Codex App，并且没有用 npm 安装 Codex CLI，可以直接跳过本页。

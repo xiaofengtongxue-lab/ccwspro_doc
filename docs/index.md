@@ -4,7 +4,7 @@ layout: home
 hero:
   name: CCWSPro
   text: 用户使用说明书
-  tagline: 先安装 Codex，再完成注册、充值、API Key 和环境配置
+  tagline: Codex 新用户接入 CCWSPro 的操作指南
   image:
     src: /images/ccwspro-cover.svg
     alt: CCWSPro 使用说明书
@@ -26,7 +26,7 @@ features:
   - title: 4. 生成 API Key
     details: 在控制台创建 API Key，并确认请求地址填写正确。
   - title: 5. 配置使用环境
-    details: 准备 Node.js、Git、CC Switch、Codex 配置和生图能力。
+    details: 配置 CC Switch、Codex 和生图能力；使用 npm 方式安装 CLI 时再补充 Node.js。
   - title: 6. 疑难解答
     details: 遇到安装、认证、网络、权限、计费问题时，按现象排查。
 ---

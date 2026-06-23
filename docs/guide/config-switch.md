@@ -40,7 +40,7 @@ brew install --cask cc-switch
 
 ## 安装完成后配置 CCWSPro
 
-### 1. 进入 Codex 配置
+### 进入 Codex 配置
 
 1. 打开 CC Switch。
 2. 点击顶部的 Codex 图标。
@@ -48,7 +48,7 @@ brew install --cask cc-switch
 
 ![进入 Codex 配置并添加供应商](/images/screenshots/cc-switch-codex-add-entry.png)
 
-### 2. 选择自定义配置
+### 选择自定义配置
 
 1. 在「添加新供应商」页面，确认当前选择的是「Codex 供应商」。
 2. 在预设供应商中点击「自定义配置」。
@@ -56,7 +56,7 @@ brew install --cask cc-switch
 
 ![选择 Codex 自定义配置](/images/screenshots/cc-switch-custom-provider.png)
 
-### 3. 填写 CCWSPro 信息
+### 填写 CCWSPro 信息
 
 按下面内容填写：
 
@@ -75,7 +75,7 @@ brew install --cask cc-switch
 「完整 URL」开关保持默认关闭即可。除非工作人员特别说明，否则只需要填写兼容 OpenAI Response 格式的服务端点地址。
 :::
 
-### 4. 启用配置并重启 Codex
+### 启用配置并重启 Codex
 
 1. 回到 CC Switch 列表，找到刚添加的 `CCWS-PRO`。
 2. 点击「启用」。
@@ -88,19 +88,19 @@ brew install --cask cc-switch
 
 如果你在 CCWSPro、官方 OpenAI 或其他 Provider 之间切换后，发现 Codex 原来的聊天记录没有出现在历史列表里，可以开启 CC Switch 的统一会话历史设置。
 
-### 1. 进入设置
+### 进入设置
 
 在 CC Switch 主界面点击左上方的齿轮按钮，进入设置页面。
 
 ![进入 CC Switch 设置](/images/screenshots/cc-switch-codex-history-settings-entry.png)
 
-### 2. 找到 Codex 应用增强
+### 找到 Codex 应用增强
 
 在「通用」页面向下滑动，找到「Codex 应用增强」区域。
 
 ![在通用设置中向下滑动](/images/screenshots/cc-switch-codex-history-general-scroll.png)
 
-### 3. 打开统一 Codex 会话历史
+### 打开统一 Codex 会话历史
 
 开启「统一 Codex 会话历史」。开启后，官方与第三方 Provider 的会话会出现在同一个历史列表里，切换配置后更容易找回之前的聊天记录。
 

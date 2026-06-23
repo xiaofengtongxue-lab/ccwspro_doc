@@ -66,9 +66,10 @@ model: gpt-image-2
 
 生成 API Key 后，继续完成：
 
-1. [Node.js 与 Git 环境](/guide/nodejs-git)
-2. [CC Switch 使用教程](/guide/config-switch)
-3. [Codex 配置](/guide/codex)
+- [CC Switch 使用教程](/guide/config-switch)
+- [Codex 配置](/guide/codex)
+
+如果你使用 `npm` 方式安装或更新 Codex CLI，再补充 [Node.js 环境（CLI 可选）](/guide/nodejs-git)。
 
 ## 检查清单
 
