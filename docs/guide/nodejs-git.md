@@ -1,6 +1,6 @@
 # Node.js 环境（CLI 可选）
 
-本页只给使用 Codex CLI 的用户作为补充说明。如果你安装的是 Codex App，通常不需要先安装 Node.js，可以直接继续配置 [CC Switch 使用教程](/guide/config-switch) 和 [Codex 配置](/guide/codex)。
+本页属于 Codex安装章节，只给使用 Codex CLI 的用户作为补充说明。如果你安装的是 Codex App，通常不需要先安装 Node.js，可以直接继续完成 [平台注册](/guide/register)、[账号充值](/guide/recharge) 和 [API Key](/guide/api-key)。
 
 Codex CLI 本身可以通过官方脚本安装，不一定需要你提前准备 Node.js。只有在下面这些情况里，才建议看本页：
 
@@ -163,7 +163,8 @@ npm -v
 
 完成 Node.js 环境后，可以继续：
 
-- [CC Switch 使用教程](/guide/config-switch)
-- [Codex 配置](/guide/codex)
+- [平台注册](/guide/register)
+- [账号充值](/guide/recharge)
+- [API Key](/guide/api-key)
 
 如果你使用的是 Codex App，并且没有用 npm 安装 Codex CLI，可以直接跳过本页。

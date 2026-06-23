@@ -10,23 +10,23 @@ hero:
     alt: CCWSPro 使用说明书
   actions:
     - theme: brand
-      text: 先安装 Codex
+      text: Codex安装
       link: /guide/codex-install
     - theme: alt
-      text: 继续注册账号
+      text: 平台注册
       link: /guide/register
 
 features:
-  - title: 1. 下载安装 Codex
-    details: 先安装 Codex 客户端或 CLI，确认工具能正常打开。
-  - title: 2. 注册账号
+  - title: 1. Codex安装
+    details: 安装 Codex 客户端或 CLI，确认工具能正常打开。
+  - title: 2. 平台注册
     details: 完成账号注册和登录，确认可以进入控制台。
-  - title: 3. 充值账户
+  - title: 3. 账号充值
     details: 进入钱包页面充值，保证账号额度可以正常使用。
-  - title: 4. 生成 API Key
-    details: 在控制台创建 API Key，并确认请求地址填写正确。
-  - title: 5. 配置使用环境
-    details: 配置 CC Switch、Codex 和生图能力；使用 npm 方式安装 CLI 时再补充 Node.js。
+  - title: 4. API Key
+    details: 在控制台创建 API Key，并完成 Codex 请求地址和密钥配置。
+  - title: 5. 高级教程
+    details: 按需配置 CC Switch、Codex 生图等进阶能力。
   - title: 6. 疑难解答
     details: 遇到安装、认证、网络、权限、计费问题时，按现象排查。
 ---
