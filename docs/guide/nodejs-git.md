@@ -1,6 +1,6 @@
 # Node.js 与 Git 环境
 
-如果你需要在本地使用 Codex、CC Switch 或其他命令行工具，建议先准备 Node.js 和 Git。Node.js 用来运行 npm 生态里的命令行工具，Git 用来下载项目、管理代码和配合后续部署。
+如果你已经安装好 Codex，下一步需要准备 Node.js 和 Git。Node.js 用来运行 npm 生态里的命令行工具，Git 用来下载项目、管理代码和配合后续部署。
 
 ## 安装前先确认
 
@@ -132,9 +132,9 @@ git config --global --list
 
 完成 Node.js 和 Git 环境后，可以继续配置：
 
-- [请求地址 / API Key](/guide/api-key)
 - [CC Switch 使用教程](/guide/config-switch)
+- [Codex 配置](/guide/codex)
 
 ::: tip 提示
-后续如果安装 Codex 或其他命令行工具失败，先回到本页重新执行验证命令，确认 Node.js、npm 和 Git 都能正常使用。
+后续如果运行命令行工具失败，先回到本页重新执行验证命令，确认 Node.js、npm 和 Git 都能正常使用。
 :::

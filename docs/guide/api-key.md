@@ -1,6 +1,6 @@
 # 请求地址 / API Key
 
-完成注册充值后，请在控制台创建并复制 API Key。请求地址不需要从控制台查找，直接使用本页给出的固定地址即可。
+完成注册和充值后，请在控制台创建并复制 API Key。请求地址不需要从控制台查找，直接使用本页给出的固定地址即可。
 
 ![API 密钥页面](/images/screenshots/api-key-list.png)
 
@@ -61,6 +61,14 @@ model: gpt-image-2
 ```
 
 具体安装步骤见 [Codex 生图教程](/guide/codex-image)。
+
+## 下一步
+
+生成 API Key 后，继续完成：
+
+1. [Node.js 与 Git 环境](/guide/nodejs-git)
+2. [CC Switch 使用教程](/guide/config-switch)
+3. [Codex 配置](/guide/codex)
 
 ## 检查清单
 

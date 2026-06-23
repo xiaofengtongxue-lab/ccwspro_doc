@@ -4,23 +4,29 @@ layout: home
 hero:
   name: CCWSPro
   text: 用户使用说明书
-  tagline: 从注册充值到环境配置，一站式配置教程
+  tagline: 先安装 Codex，再完成注册、充值、API Key 和环境配置
   image:
     src: /images/ccwspro-cover.svg
     alt: CCWSPro 使用说明书
   actions:
     - theme: brand
-      text: 开始注册充值
-      link: /guide/register
+      text: 先安装 Codex
+      link: /guide/codex-install
     - theme: alt
-      text: 配置使用环境
-      link: /guide/nodejs-git
+      text: 继续注册账号
+      link: /guide/register
 
 features:
-  - title: 注册与充值
-    details: 完成账号注册、套餐充值和售后群加入，先把账号状态准备好。
-  - title: 环境配置
-    details: 按步骤准备 Node.js、Git、请求地址、API Key、Codex 配置和生图能力。
-  - title: 疑难解答
-    details: 遇到安装、认证、网络、权限、计费问题时，按现象快速排查。
+  - title: 1. 下载安装 Codex
+    details: 先安装 Codex 客户端或 CLI，确认工具能正常打开。
+  - title: 2. 注册账号
+    details: 完成账号注册和登录，确认可以进入控制台。
+  - title: 3. 充值账户
+    details: 进入钱包页面充值，保证账号额度可以正常使用。
+  - title: 4. 生成 API Key
+    details: 在控制台创建 API Key，并确认请求地址填写正确。
+  - title: 5. 配置使用环境
+    details: 准备 Node.js、Git、CC Switch、Codex 配置和生图能力。
+  - title: 6. 疑难解答
+    details: 遇到安装、认证、网络、权限、计费问题时，按现象排查。
 ---
