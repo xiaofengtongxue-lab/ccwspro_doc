@@ -1,25 +1,33 @@
 # Codex 配置
 
-本页用于把已经安装好的 Codex 接入 CCWSPro。新用户请先完成 [Codex 下载安装](/guide/codex-install)，再继续本页配置。
+本页用于把已经安装好的 Codex 接入 CCWSPro。默认你已经完成 [Codex 下载安装](/guide/codex-install)、[平台注册](/guide/register)、[账号充值](/guide/recharge)，并且已经拿到 [请求地址 / API Key](/guide/api-key)。
 
-开始前请先准备好：
+如果你还没有配置过 CC Switch，请先打开 [CC Switch 使用教程](/guide/config-switch)，按教程完成安装、添加 `CCWS-PRO` Provider、填写 API Key 并启用配置。完成后再回到本页继续验证 Codex。
 
-- 已完成 [Codex 下载安装](/guide/codex-install)。
-- 已完成 [注册 / 登录](/guide/register) 和 [充值 / 续费](/guide/recharge)。
-- 已获取 CCWSPro 的 [请求地址 / API Key](/guide/api-key)。
-- 已安装并配置 [CC Switch 使用教程](/guide/config-switch)。
+::: tip 推荐路线
+普通用户推荐使用 `Codex 客户端` + `CC Switch`。CC Switch 负责写入和切换 Provider，本页负责确认 Codex 能正常使用当前 Provider。
+:::
 
 如果你使用 `npm` 方式安装或更新 Codex CLI，再先确认 [Node.js 环境（CLI 可选）](/guide/nodejs-git) 已经可用；使用 Codex App 或官方脚本安装 CLI 可以跳过这一步。
 
-::: tip 推荐
-普通用户推荐使用 `Codex 客户端` + `CC Switch`。这样不需要手动编辑配置文件，也更容易在不同 Provider 之间切换。
-:::
+## 先完成 CC Switch 配置
 
-## 客户端配置（推荐）
+第一次接入 CCWSPro 时，不建议直接手动改 Codex 配置文件。先按 [CC Switch 使用教程](/guide/config-switch) 完成下面几件事：
 
-### 通过 CC Switch 启用 CCWSPro
+- 安装并打开 CC Switch。
+- 进入 Codex 配置。
+- 添加自定义 Provider。
+- 填写 `https://www.ccws.pro/v1` 和你的 API Key。
+- 启用 `CCWS-PRO` Provider。
+- 重启 Codex 客户端，或关闭终端后重新打开终端。
 
-打开 CC Switch，确认当前启用的是 `CCWS-PRO` Provider。如果你还没有添加 Provider，先按 [CC Switch 使用教程](/guide/config-switch) 完成配置。
+完成后再继续下面的客户端或命令行验证。
+
+## 客户端验证（推荐）
+
+### 确认 CCWSPro 已启用
+
+打开 CC Switch，确认当前启用的是 `CCWS-PRO` Provider。
 
 需要重点确认：
 
@@ -46,18 +54,20 @@
 
 ![Codex 客户端首次测试对话](/images/screenshots/codex-client-first-message.png)
 
-## 命令行配置（进阶）
+## 命令行验证（进阶）
 
-命令行方式也推荐使用 CC Switch 管理 Provider。你只需要在 CC Switch 中启用 `CCWS-PRO`，然后重新打开终端运行 Codex。
+命令行方式也推荐先用 CC Switch 管理 Provider。确认 `CCWS-PRO` 已经启用后，重新打开终端运行 Codex。
 
 ```bash
 cd 你的项目目录
 codex
 ```
 
-## 手动配置方式
+## 手动配置方式（备选）
 
-如果你暂时不使用 CC Switch，也可以手动配置 Codex。请优先使用用户级配置文件，不要把 API Key 写进项目仓库。
+如果你暂时不使用 CC Switch，也可以手动配置 Codex。手动方式适合已经熟悉配置文件的用户；普通用户仍建议优先使用 [CC Switch 使用教程](/guide/config-switch)。
+
+请优先使用用户级配置文件，不要把 API Key 写进项目仓库。
 
 配置文件位置：
 

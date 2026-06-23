@@ -66,8 +66,8 @@ model: gpt-image-2
 
 API Key 创建后，继续完成：
 
-- [Codex 配置](/guide/codex)
 - [高级教程：CC Switch 使用教程](/guide/config-switch)
+- [Codex 配置](/guide/codex)
 - [高级教程：Codex 生图教程](/guide/codex-image)
 
 如果你使用 `npm` 方式安装或更新 Codex CLI，再回到 [Codex安装](/guide/nodejs-git) 章节补充 Node.js 环境。
