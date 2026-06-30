@@ -48,16 +48,31 @@
   border-radius: 8px;
 }
 
+.VPContent.is-home .VPHome {
+  margin-bottom: 0 !important;
+}
+
 .VPHome .VPFeatures {
   padding-top: clamp(40px, 5vw, 64px);
-  padding-bottom: clamp(72px, 8vw, 112px);
+  padding-bottom: clamp(40px, 5vw, 64px);
   background: var(--vp-c-bg);
+}
+
+.VPHome .vp-doc.container {
+  display: none;
 }
 
 .VPHome .VPHero {
   background:
     radial-gradient(circle at 82% 12%, rgba(229, 94, 239, 0.12), transparent 30%),
     linear-gradient(135deg, #eef4ff 0%, #f2edff 46%, #fff3fb 100%);
+}
+
+@media (min-width: 768px) {
+  .VPHome .VPHero .image-container {
+    transform: translate(18px, 3px) scale(1.04);
+    transform-origin: center;
+  }
 }
 
 .dark .VPHome .VPHero {
