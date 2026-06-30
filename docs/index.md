@@ -6,7 +6,7 @@ hero:
   text: 用户使用说明书
   tagline: Codex 新用户接入 CCWS 的操作指南
   image:
-    src: /images/home-placeholder.svg
+    src: /images/home-hero.png
     alt: CCWS 使用说明书
   actions:
     - theme: brand
