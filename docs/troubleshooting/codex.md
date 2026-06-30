@@ -13,7 +13,7 @@
 
 ```json
 {
-  "OPENAI_API_KEY": "你在CCWSPro申请的API key"
+  "OPENAI_API_KEY": "你在CCWS申请的API key"
 }
 ```
 
@@ -28,8 +28,8 @@ echo $OPENAI_API_KEY
 
 ## 请求到了错误的服务
 
-如果你同时配置过多个服务商，请确认当前 Base URL 指向 CCWSPro。
+如果你同时配置过多个服务商，请确认当前 Base URL 指向 CCWS。
 
 ## 模型不可用
 
-请在 CCWSPro 控制台确认当前账号可用模型，并把 Codex 配置里的模型名称改成一致。
+请在 CCWS 控制台确认当前账号可用模型，并把 Codex 配置里的模型名称改成一致。

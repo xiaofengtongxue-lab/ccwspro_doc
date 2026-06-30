@@ -1,6 +1,6 @@
 # CC Switch 使用教程
 
-CC Switch 是一个本机桌面配置管理工具。你可以用它保存 CCWSPro 的请求地址和 API Key，并在 Codex 等命令行工具之间切换配置。
+CC Switch 是一个本机桌面配置管理工具。你可以用它保存 CCWS 的请求地址和 API Key，并在 Codex 等命令行工具之间切换配置。
 
 ![CC Switch 配置界面](/images/screenshots/cc-switch-codex-add-entry.png)
 
@@ -8,7 +8,7 @@ CC Switch 是一个本机桌面配置管理工具。你可以用它保存 CCWSPr
 
 - 你同时有多个 API 服务或多个账号。
 - 你不想每次手动修改 Codex 配置文件。
-- 你需要在 CCWSPro 和其他配置之间快速切换。
+- 你需要在 CCWS 和其他配置之间快速切换。
 
 ## 安装 CC Switch
 
@@ -38,7 +38,7 @@ brew install --cask cc-switch
 
 安装完成后打开 CC Switch。首次启动时，如果它提示导入已有配置，可以按页面提示导入；如果你是第一次配置 Codex，也可以直接新建配置。
 
-## 安装完成后配置 CCWSPro
+## 安装完成后配置 CCWS
 
 ### 进入 Codex 配置
 
@@ -56,20 +56,20 @@ brew install --cask cc-switch
 
 ![选择 Codex 自定义配置](/images/screenshots/cc-switch-custom-provider.png)
 
-### 填写 CCWSPro 信息
+### 填写 CCWS 信息
 
 按下面内容填写：
 
 | 字段 | 说明 |
 | --- | --- |
-| 供应商名称 | 建议填写 `CCWS-PRO`，方便后续识别 |
+| 供应商名称 | 建议填写 `CCWS`，方便后续识别 |
 | 官网链接 | 填写 `https://www.ccws.pro` |
 | API Key | 粘贴当前账号生成的有效 Key |
 | API 请求地址 | Codex 配置填写 `https://www.ccws.pro/v1` |
 
 填写完成后，点击右下角「添加」。
 
-![填写 CCWSPro 供应商信息](/images/screenshots/cc-switch-provider-form.png)
+![填写 CCWS 供应商信息](/images/screenshots/cc-switch-provider-form.png)
 
 ::: tip 提示
 「完整 URL」开关保持默认关闭即可。除非工作人员特别说明，否则只需要填写兼容 OpenAI Response 格式的服务端点地址。
@@ -77,16 +77,16 @@ brew install --cask cc-switch
 
 ### 启用配置并重启 Codex
 
-1. 回到 CC Switch 列表，找到刚添加的 `CCWS-PRO`。
+1. 回到 CC Switch 列表，找到刚添加的 `CCWS`。
 2. 点击「启用」。
 3. 关闭当前终端窗口，并重新打开终端。
 4. 重新启动 Codex 后，发起一次简单测试，确认请求能正常发出。
 
-![启用 CCWSPro 配置](/images/screenshots/cc-switch-enable-provider.png)
+![启用 CCWS 配置](/images/screenshots/cc-switch-enable-provider.png)
 
 ## 切换 Provider 后显示 Codex 会话历史
 
-如果你在 CCWSPro、官方 OpenAI 或其他 Provider 之间切换后，发现 Codex 原来的聊天记录没有出现在历史列表里，可以开启 CC Switch 的统一会话历史设置。
+如果你在 CCWS、官方 OpenAI 或其他 Provider 之间切换后，发现 Codex 原来的聊天记录没有出现在历史列表里，可以开启 CC Switch 的统一会话历史设置。
 
 ### 进入设置
 
@@ -116,7 +116,7 @@ brew install --cask cc-switch
 
 - Codex 使用的请求地址是否为 `https://www.ccws.pro/v1`。
 - API Key 是否复制完整。
-- 模型名称是否在 CCWSPro 当前支持范围内。
+- 模型名称是否在 CCWS 当前支持范围内。
 
 ## 使用建议
 

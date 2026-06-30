@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: CCWSPro
+  name: CCWS
   text: 用户使用说明书
-  tagline: Codex 新用户接入 CCWSPro 的操作指南
+  tagline: Codex 新用户接入 CCWS 的操作指南
   image:
-    src: /images/ccwspro-cover.svg
-    alt: CCWSPro 使用说明书
+    src: /images/logo.png
+    alt: CCWS 使用说明书
   actions:
     - theme: brand
       text: Codex安装

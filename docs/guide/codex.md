@@ -2,10 +2,10 @@
 
 这一步要做两件事：
 
-- 用 CC Switch 把 CCWSPro 添加到 Codex 里。
+- 用 CC Switch 把 CCWS 添加到 Codex 里。
 - 打开 Codex 发一条测试消息，确认可以正常使用。
 
-配置前需要先拿到 CCWSPro 的 API Key。如果还没有生成，先回到 [请求地址 / API Key](/guide/api-key) 页面完成创建。
+配置前需要先拿到 CCWS 的 API Key。如果还没有生成，先回到 [请求地址 / API Key](/guide/api-key) 页面完成创建。
 
 ::: tip 推荐路线
 推荐使用 `Codex 客户端` + `CC Switch`。这样不用手动找配置文件，后面切换 Provider 也更方便。
@@ -21,20 +21,20 @@
 - 进入 Codex 配置。
 - 添加自定义 Provider。
 - 填写 `https://www.ccws.pro/v1` 和你的 API Key。
-- 启用 `CCWS-PRO` Provider。
+- 启用 `CCWS` Provider。
 - 重启 Codex 客户端，或关闭终端后重新打开终端。
 
 完成后回到本页，继续下面的客户端或命令行验证。
 
 ## 客户端验证（推荐）
 
-### 确认 CCWSPro 已启用
+### 确认 CCWS 已启用
 
-打开 CC Switch，确认当前启用的是 `CCWS-PRO` Provider。
+打开 CC Switch，确认当前启用的是 `CCWS` Provider。
 
 需要重点确认：
 
-- Provider 名称为 `CCWS-PRO` 或其他你能识别的名称。
+- Provider 名称为 `CCWS` 或其他你能识别的名称。
 - API 请求地址填写 `https://www.ccws.pro/v1`。
 - API Key 已复制完整。
 - 启用 Provider 后，重新启动 Codex 客户端。
@@ -59,7 +59,7 @@
 
 ## 命令行验证（进阶）
 
-命令行方式也推荐先用 CC Switch 管理 Provider。确认 `CCWS-PRO` 已经启用后，重新打开终端运行 Codex。
+命令行方式也推荐先用 CC Switch 管理 Provider。确认 `CCWS` 已经启用后，重新打开终端运行 Codex。
 
 ```bash
 cd 你的项目目录
@@ -82,12 +82,12 @@ codex
 参考配置如下：
 
 ```toml
-model_provider = "ccwspro"
+model_provider = "ccws"
 model = "gpt-5.5"
 model_reasoning_effort = "xhigh"
 
-[model_providers.ccwspro]
-name = "CCWSPro"
+[model_providers.ccws]
+name = "CCWS"
 wire_api = "responses"
 requires_openai_auth = true
 base_url = "https://www.ccws.pro/v1"
@@ -108,7 +108,7 @@ Codex 的 `base_url` 需要带 `/v1`，请填写 `https://www.ccws.pro/v1`。
 
 ```json
 {
-  "OPENAI_API_KEY": "你在CCWSPro申请的API key"
+  "OPENAI_API_KEY": "你在CCWS申请的API key"
 }
 ```
 
@@ -135,11 +135,11 @@ codex
 
 如果 Codex 无法正常请求，优先检查：
 
-- CC Switch 当前启用的 Provider 是否为 `CCWS-PRO`。
+- CC Switch 当前启用的 Provider 是否为 `CCWS`。
 - Codex 请求地址是否为 `https://www.ccws.pro/v1`。
 - 手动配置时，`auth.json` 是否放在正确的 `.codex` 目录中。
 - API Key 是否复制完整、是否仍然有效。
-- 模型名称是否在 CCWSPro 当前支持范围内。
+- 模型名称是否在 CCWS 当前支持范围内。
 - 修改配置后是否重新打开终端或重启客户端。
 
 如果命令行提示 `codex: command not found`，说明 Codex CLI 还没有安装好，请回到 [Codex 下载安装](/guide/codex-install) 重新验证。

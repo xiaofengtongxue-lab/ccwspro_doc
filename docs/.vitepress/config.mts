@@ -2,11 +2,15 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'CCWSPro 文档',
-  description: 'CCWSPro 用户使用说明书：Codex安装、平台注册、账号充值、API Key、高级教程与疑难解答',
+  title: 'CCWS 文档',
+  description: 'CCWS 用户使用说明书：Codex安装、平台注册、账号充值、API Key、高级教程与疑难解答',
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
   srcExclude: ['publish/**/*.md'],
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }]
+  ],
   lastUpdated: true,
   markdown: {
     image: {
@@ -14,7 +18,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: '/images/logo.svg',
+    logo: '/images/logo.png',
     search: {
       provider: 'local'
     },
@@ -92,8 +96,8 @@ export default defineConfig({
       text: '最后更新'
     },
     footer: {
-      message: 'CCWSPro 用户使用说明书，帮助你完成 Codex安装、平台注册、账号充值、API Key、高级教程和常见问题排查。',
-      copyright: 'Copyright © 2026 CCWSPro'
+      message: 'CCWS 用户使用说明书，帮助你完成 Codex安装、平台注册、账号充值、API Key、高级教程和常见问题排查。',
+      copyright: 'Copyright © 2026 CCWS'
     }
   }
 })
