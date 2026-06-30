@@ -1,14 +1,14 @@
 <svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="960" height="640" rx="32" fill="#F6F1E7"/>
-  <rect x="72" y="72" width="816" height="496" rx="24" fill="#FBFAF7" stroke="#D8D0C2"/>
-  <rect x="112" y="118" width="256" height="28" rx="8" fill="#17665A"/>
-  <rect x="112" y="174" width="448" height="18" rx="6" fill="#B9C8C0"/>
-  <rect x="112" y="212" width="360" height="18" rx="6" fill="#D8D0C2"/>
-  <rect x="112" y="292" width="188" height="128" rx="14" fill="#E7EFEA" stroke="#A9C8BD"/>
-  <rect x="330" y="292" width="188" height="128" rx="14" fill="#F0E6D5" stroke="#DDBB82"/>
-  <rect x="548" y="292" width="188" height="128" rx="14" fill="#E9ECE8" stroke="#C4CDC8"/>
-  <path d="M638 132c0-11 9-20 20-20h130c11 0 20 9 20 20v96c0 11-9 20-20 20H658c-11 0-20-9-20-20v-96Z" fill="#17665A"/>
-  <path d="M676 170h94M676 198h58" stroke="#F8F4E8" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="640" cy="474" r="54" fill="#D49A45"/>
-  <path d="M619 474h42M640 453v42" stroke="#1F2B28" stroke-width="10" stroke-linecap="round"/>
+  <rect width="960" height="640" rx="32" fill="#EEF4FF"/>
+  <rect x="72" y="72" width="816" height="496" rx="24" fill="#FFFFFF" stroke="#DCE4FF"/>
+  <rect x="112" y="118" width="256" height="28" rx="8" fill="#3328D9"/>
+  <rect x="112" y="174" width="448" height="18" rx="6" fill="#B8C6FF"/>
+  <rect x="112" y="212" width="360" height="18" rx="6" fill="#E2E7FF"/>
+  <rect x="112" y="292" width="188" height="128" rx="14" fill="#EEF4FF" stroke="#B9C7FF"/>
+  <rect x="330" y="292" width="188" height="128" rx="14" fill="#F2EDFF" stroke="#C4B4FF"/>
+  <rect x="548" y="292" width="188" height="128" rx="14" fill="#FFF3FB" stroke="#F2B7EA"/>
+  <path d="M638 132c0-11 9-20 20-20h130c11 0 20 9 20 20v96c0 11-9 20-20 20H658c-11 0-20-9-20-20v-96Z" fill="#3328D9"/>
+  <path d="M676 170h94M676 198h58" stroke="#F4F7FF" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="640" cy="474" r="54" fill="#E55EEF"/>
+  <path d="M619 474h42M640 453v42" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
 </svg>
